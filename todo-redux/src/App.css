@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #282c34;
+    background-color: #ffffff;
 }
 
 .container {
@@ -15,6 +15,7 @@
     align-items: center;
     font-size: 20px;
     color: white;
+    background-color: #282c34;
 }
 
 .todoForm {
@@ -44,7 +45,8 @@ button {
 .singleTodo {
     border-radius: 50px;
     margin: 10px 0;
-    background-color: #5dadf8;
+    /*background-color: #5dadf8;*/
+    background-color: #ff3c3c;
     padding: 10px 20px;
     display: flex;
     width: 400px;
