@@ -4,13 +4,13 @@ import TodoForm from "./components/todoForm";
 import TodoList from "./components/todoList";
 
 const App = () => {
+
     const [todo, setTodo] = useState("");
     const [todos, setTodos] = useState([]);
     const [editId, setEditId] = useState(0);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if (editId) {
             const editTodo = todos.find((i) => i.id === editId);
             const updatedTodos = todos.map((t) =>
@@ -29,12 +29,10 @@ const App = () => {
             setTodo("");
         }
     };
-
     const handleDelete = (id) => {
         const delTodo = todos.filter((to) => to.id !== id);
         setTodos([...delTodo]);
     };
-
     const handleEdit = (id) => {
         const editTodo = todos.find((i) => i.id === id);
         setTodo(editTodo.todo);
